@@ -1,0 +1,79 @@
+/* styles.css */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Tilt+Neon&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3edf8;
+    margin: 0;
+    font-family: "Mulish" ,sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    /* border: 2px solid #000; */
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 1.1vw;
+}
+
+#game-status {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#restartButton {
+    border: 2px solid #333;
+    border-radius: .7vw;
+    padding: 1.2vw;
+    font-weight: 400;
+    background-color: #333;
+    color: #fff;
+}
+
+/* .currentClass {
+
+} */
+
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+    }
+
+    .cell {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    
+}
